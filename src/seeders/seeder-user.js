@@ -10,8 +10,9 @@ module.exports = {
       address: 'VN',
       phonenumber: '0766132700',
       gender: 1,
-      typeRole: 'ROLE',
-      keyRole: 'R1',
+      image: null,
+      roleId: 'R1',
+      positionId: 'P0',
       createdAt: new Date(),
       updatedAt: new Date()
     }]);
