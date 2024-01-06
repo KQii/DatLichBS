@@ -27,12 +27,14 @@
                 <th scope="col">Image</th>
                 <th scope="col">RoleID</th>
                 <th scope="col">PositionID</th>
+                <th scope="col">Action</th>
+
             </tr>
         </thead>
         <tbody>
             <% for(let i=0; i < dataTable.length; i++) { %>
                 <tr>
-                    <th scope="row">#</th>
+                    <td>#</td>
                     <td>
                         <%= dataTable[i].email %>
                     </td>
@@ -60,8 +62,12 @@
                     <td>
                         <%= dataTable[i].positionId %>
                     </td>
+                    <td>
+                        <a href="/edit-crud?id=<%= dataTable[i].id %>" type="button" class="btn btn-warning">Edit</a>
+                        <a href="" type="button" class="btn btn-danger">Delete</a>
+                    </td>
                 </tr>
-            <% } %>
+                <% } %>
         </tbody>
     </table>
 </body>
